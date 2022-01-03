@@ -1,0 +1,6 @@
+$ git checkout --orphan NEWBRANCH
+$ git rm -rf .
+$ touch .gitignore && git add .gitignore
+$ git commit -m "Initialize with .gitignore"
+$ git checkout main
+$ git reset --hard NEWBRANCH
